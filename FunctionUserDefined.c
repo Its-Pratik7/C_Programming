@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int Addition(int iNo1, int iNo2)
+int Addition(int iNo1, int iNo2)   // Function to add numbers
 {
     int iSum = 0;
     iSum = iNo1 + iNo2;
@@ -11,8 +11,8 @@ int main()
 {
     int iValue1 = 10, iValue2 = 11, iAns = 0;
 
-    iAns = Addition(iValue1, iValue2);
-    printf("Addition is : %d\n",iAns);
+    iAns = Addition(iValue1, iValue2);   // Call function
+    printf("Addition is : %d\n",iAns);   // Print
 
     return 0;
 }
