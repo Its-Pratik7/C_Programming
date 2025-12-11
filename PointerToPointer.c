@@ -2,20 +2,20 @@
 
 int main()
 {
-    int no = 11;
+    int no = 11;      // variable
 
-    int *p = &no;
-    int **q = &p;
-    int ***a = &q;
-    int ****b = &a;
-    int *****c = &b;
+    int *p = &no;     // level 1 pointer
+    int **q = &p;     // level 2 pointer
+    int ***a = &q;    // level 3 pointer
+    int ****b = &a;   // level 4 pointer
+    int *****c = &b;  // level 5 pointer
 
-    printf("%d\n",no);
-    printf("%d\n",*p);
-    printf("%d\n",**q);
-    printf("%d\n",***a);
-    printf("%d\n",****b);
-    printf("%d\n",*****c);
+    printf("%d\n",no);        // direct value
+    printf("%d\n",*p);        // via p
+    printf("%d\n",**q);       // via q
+    printf("%d\n",***a);      // via a
+    printf("%d\n",****b);     // via b
+    printf("%d\n",*****c);    // via c
     
     return 0;
 }
