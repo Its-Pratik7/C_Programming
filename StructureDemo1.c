@@ -2,17 +2,17 @@
 
 struct Demo
 {
-    int i;
-    float f;
-    int j;
+    int i;        // integer member
+    float f;      // float member
+    int j;        // another integer
 };
 
 int main()
 {
-    struct Demo obj;
+    struct Demo obj;   // structure variable
 
-    printf("Size of Demo is : %lu\n",sizeof(struct Demo));       // 12
-    printf("size of object is : %lu\n",sizeof(obj));
+    printf("Size of Demo is : %lu\n",sizeof(struct Demo));       // print structure size
+    printf("size of object is : %lu\n",sizeof(obj));             // print variable size
     
     return 0;
 }
