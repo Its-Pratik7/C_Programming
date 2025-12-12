@@ -2,22 +2,22 @@
 
 struct Demo
 {
-    int i;
-    float f;
-    int j;
+    int i;        // integer member
+    float f;      // float member
+    int j;        // another integer
 };
 
 int main()
 {
-    struct Demo obj;
+    struct Demo obj;   // structure variable
 
-    obj.i = 11;
-    obj.f = 90.4f;
-    obj.j = 21;
+    obj.i = 11;        // assign int value
+    obj.f = 90.4f;     // assign float value
+    obj.j = 21;        // assign another int value
 
-    printf("%d\n",obj.i);   // 11
-    printf("%f\n",obj.f);   // 90.4
-    printf("%d\n",obj.j);   // 21
+    printf("%d\n",obj.i);   // print i
+    printf("%f\n",obj.f);   // print f
+    printf("%d\n",obj.j);   // print j
     
     return 0;
 }
