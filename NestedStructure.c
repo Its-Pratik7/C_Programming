@@ -1,21 +1,21 @@
-#include<stdio.h>
+#include<stdio.h>   // Standard I/O library
 
 struct Demo
 {
-    int i;
-    float f;
+    int i;          // Integer member
+    float f;        // Float member
 };
 
 struct Hello
 {
-    int no;
-    float marks;
-    struct Demo dobj;   // Nested
+    int no;         // Integer data
+    float marks;    // Float data
+    struct Demo dobj;   // Nested structure object
 };
 
 int main()
 {
-    printf("Size of hello structure is : %lu\n",sizeof(struct Hello));  // 16
+    printf("Size of hello structure is : %lu\n",sizeof(struct Hello));  // Print size of structure
 
-    return 0;
+    return 0;       // Successful program termination
 }
