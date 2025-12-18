@@ -1,17 +1,18 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h>          // Standard I/O
+#include<stdlib.h>         // Memory functions
 
-int main()
+int main()                 // Main function
 {
-    
-    int *Arr = NULL;
+    int *Arr = NULL;       // Pointer initialization
 
-    Arr = (int *)malloc(5 * sizeof(int));
+    // Allocate memory
+    Arr = (int *)malloc(5 * sizeof(int)); // Allocate memory
 
-    
-    Arr = (int *)realloc(Arr,3*sizeof(int));
+    // Resize memory
+    Arr = (int *)realloc(Arr,3*sizeof(int)); // Reduce memory size
 
-    free(Arr);
+    // Free memory
+    free(Arr);             // Release memory
 
-    return 0;
+    return 0;              // Program end
 }
